@@ -26,30 +26,75 @@
     </div>
   </div>
 
-  <div id="main_body">
+<!--   
+    <div id="banner">
+    <div class="row" style="padding-top: 0;">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
+      <div class="slideshow-container">
 
-          <div class="question"><div class="text-center">I want to borrow RM <span id="val-loan-amt" class="values"></span></div></div>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="banner" src="files_related/agrocash.png">
+          <div class="text">Caption Text</div>
+        </div>
 
-          <div class="slidecontainer">
-            <input type="range" min="1000" max="5000000" value="1000" class="slider" id="loan-amt" onchange="myCalc()">
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="banner" src="files_related/MAHA.png">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="banner" src="files_related/logo_bnm.png">
+          <div class="text">Caption Three</div>
           </div>
+        </div>
 
-          <div class="question"><div class="text-center">For <span id="val-loan-tenure" class="values"></span> Year(s)</div></div>
+      </div>
+      <div class="items">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </div> -->
 
-          <div class="slidecontainer">
-            <input type="range" min="1" max="10" value="0" class="slider" id="loan-tenure" onchange="myCalc()">
+    <div id="banner_body">
+      <div class="container" style="max-height: 100%;">
+        <div class="slideshow-container">
+          <div class="rowPoster">
+            <img class="myPoster" style="transform: translateY(-20px) scale(1.2);" src="files_related/Agrobank-Content.png">
           </div>
-
-          <div class="question" style="font-style: italic;">
-            <div class="text-center">Estimated Monthly Installment</span></div>
+          <div class="rowPoster">
+            <img class="myPoster" style="transform: translateX(-20px) scale(1.2);" src="files_related/Agrobank-Gift.png">
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="installment_amt values" style="border-bottom: none;">
-            <div class="text-center">RM <span id="val-loan-monthly"></div>
+    <div id="main_body">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+
+            <div class="question"><div class="text-center">I want to borrow RM <span id="val-loan-amt" class="values"></span></div></div>
+
+            <div class="slidecontainer">
+              <input type="range" min="1000" max="5000000" value="1000" class="slider" id="loan-amt" onchange="myCalc()">
+            </div>
+
+            <div class="question"><div class="text-center">For <span id="val-loan-tenure" class="values"></span> Year(s)</div></div>
+
+            <div class="slidecontainer">
+              <input type="range" min="1" max="10" value="0" class="slider" id="loan-tenure" onchange="myCalc()">
+            </div>
+
+            <div class="question" style="font-style: italic;">
+              <div class="text-center"><span>Estimated Monthly Installment</span></div>
+            </div>
+
+            <div class="installment_amt values" style="border-bottom: none;">
+              <div class="text-center">RM <span id="val-loan-monthly"></span></div>
             </div>
 
             <div class="text-center">
@@ -108,103 +153,103 @@
                 <img src="files_related/icon/Demo_10_Argricultural-financing.png">
                 <label>I-Microplus</label>
               </div>
-          </div>
-          
+            </div>
+
           </div>
         </div>
       </div>
     </div>
 
     <div id="second_body" style="margin-bottom: 0px; padding-top: 0px;">
-    <div class="container">
+      <div class="container">
 
-      <div class="row"  style="margin: 0px;align-items: stretch;padding: 45px 0 60px;">
-        <div class="col-sm-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/rm7wXXNWnsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row"  style="margin: 0px;align-items: stretch;padding: 45px 0 60px;">
+          <div class="col-sm-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rm7wXXNWnsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-sm-6" style="padding: 0 30px">
+
+            <div class="column-title">
+              <h4 class="column-title-text">Looking to apply for a personal loan?</h4>
+            </div>
+
+            <div class="row" style="margin-top: 0px; padding-top: 0px;">
+              <div class="column" style="padding: 0 30px 0 0;">
+                <h6 style="margin-top: 0px; margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #ffc80b; font-size: 22px;">1</span> Give us some info</h6>
+                <p style=""><span style="color: #000000; font-size: 14px;">Play with our calculator and find matching products that meet your needs.</span></p>
+              </div>
+
+              <div class="column" style="padding: 0 30px 0 0;">
+                <h6 style="margin-top: 0px; margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #ff9804; font-size: 22px;">2</span> Tell us your story</h6>
+                <p style=""><span style="color: #000000; font-size: 14px;">Give us some info about you so that we can help you find the best matches.</span></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column" style="padding: 0 30px 0 0;">
+                <h6 style=" margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #f37019; font-size: 22px;">3</span> Just register</h6>
+                <p style=""><span style="color: #000000; font-size: 14px;">Give us your contact details and answer some simple questions for verification purposes.</span></p>
+              </div>
+
+              <div class="column" style="padding: 0 30px 0 0;">
+                <h6 style=" margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #00c433; font-size: 22px;">4</span> Compare and choose</h6>
+                <p style=""><span style="color: #000000; font-size: 14px;">Choose the best products and funds will be deposited into your account within minutes!</span></p>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="button buttonR" onclick="window.location.href='http://172.16.0.144/JACCESS_BOT/portal/_personalloan1.php?reset=1';">Apply Now</button>
+            </div>
+          </div>
+
         </div>
-
-        <div class="col-sm-6" style="padding: 0 30px">
-
-          <div class="column-title">
-            <h4 class="column-title-text">Looking to apply for a personal loan?</h4>
-          </div>
-
-          <div class="row" style="margin-top: 0px; padding-top: 0px;">
-            <div class="column" style="padding: 0 30px 0 0;">
-              <h6 style="margin-top: 0px; margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #ffc80b; font-size: 22px;">1</span> Give us some info</h6>
-              <p style=""><span style="color: #000000; font-size: 14px;">Play with our calculator and find matching products that meet your needs.</span></p>
-            </div>
-
-            <div class="column" style="padding: 0 30px 0 0;">
-              <h6 style="margin-top: 0px; margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #ff9804; font-size: 22px;">2</span> Tell us your story</h6>
-              <p style=""><span style="color: #000000; font-size: 14px;">Give us some info about you so that we can help you find the best matches.</span></p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="column" style="padding: 0 30px 0 0;">
-              <h6 style=" margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #f37019; font-size: 22px;">3</span> Just register</h6>
-              <p style=""><span style="color: #000000; font-size: 14px;">Give us your contact details and answer some simple questions for verification purposes.</span></p>
-            </div>
-
-            <div class="column" style="padding: 0 30px 0 0;">
-              <h6 style=" margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #00c433; font-size: 22px;">4</span> Compare and choose</h6>
-              <p style=""><span style="color: #000000; font-size: 14px;">Choose the best products and funds will be deposited into your account within minutes!</span></p>
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="button buttonR" onclick="window.location.href='http://172.16.0.144/JACCESS_BOT/portal/_personalloan1.php?reset=1';">Apply Now</button>
-          </div>
-        </div>
-
-      </div>
       </div>
     </div>
 
     <footer>
       <div class="container">
-      <div class="row row_footer" style="padding-top: 0px;">
+        <div class="row row_footer" style="padding-top: 0px;">
 
-        <div class="col-sm-3 column_footer">
-          <img class="logo" src="files_related/logo.png" onclick="window.location.href='https://www.agrobank.com.my/';">
-          <p>For any enquiries regarding Agrobank, please contact our Client Service Centre.</p>
-          
-          <p>Bank Pertanian Malaysia Berhad</p>
-          <p>(811810-U)</p>
-          <p><a class="links" href="https://www.agrobank.com.my" target="_blank">https://www.agrobank.com.my</a></p>
-          
-          <p>Terms of Use | Privacy & Security Policies</p>
-        </div>
+          <div class="col-sm-3 column_footer">
+            <img class="logo" src="files_related/logo.png" onclick="window.location.href='https://www.agrobank.com.my/';">
+            <p>For any enquiries regarding Agrobank, please contact our Client Service Centre.</p>
 
-        <div class="col-sm-3 column_footer">
-          <h2>Contact Us</h2>
-          <p>Head Office / Registered Office:</p>
-          <p>Bank Pertanian Malaysia Berhad (Agrobank)</p>
-          <p>Leboh Pasar Besar,</p>
-          <p>50726, Kuala Lumpur</p>
-          
-          <p>Tel: 03-2731 1600</p>
-          <p>Fax: 03-2691 4908</p>
-          <p>Agro Contact Centre: 1-300-88-2476</p>
-        </div>
+            <p>Bank Pertanian Malaysia Berhad</p>
+            <p>(811810-U)</p>
+            <p><a class="links" href="https://www.agrobank.com.my" target="_blank">https://www.agrobank.com.my</a></p>
 
-        <div class="col-sm-3 column_footer">
-          <h2>Main Link</h2>
-          <a class="links" href="">About Us</a>
-                
-          <a class="links" href="">Our Partners</a>
-                
-          <a class="links" href="https://172.16.0.144/JACCESS_BOT/portal/_savingaccount.php?reset=1">Apply Now</a>
-                
-          <a class="links" href="">FAQ</a>
-                
-          <a class="links" href="">Contact Us</a>
-        </div>
+            <p>Terms of Use | Privacy & Security Policies</p>
+          </div>
 
-        <div class="col-sm-3 column_footer">
-          <h2>Supported by Bank Negara Malaysia</h2>
-          <img src="files_related/logo_bnm.png" onclick="window.location.href='https://www.bnm.gov.my/';">
-        </div>
+          <div class="col-sm-3 column_footer">
+            <h2>Contact Us</h2>
+            <p>Head Office / Registered Office:</p>
+            <p>Bank Pertanian Malaysia Berhad (Agrobank)</p>
+            <p>Leboh Pasar Besar,</p>
+            <p>50726, Kuala Lumpur</p>
+
+            <p>Tel: 03-2731 1600</p>
+            <p>Fax: 03-2691 4908</p>
+            <p>Agro Contact Centre: 1-300-88-2476</p>
+          </div>
+
+          <div class="col-sm-3 column_footer">
+            <h2>Main Link</h2>
+            <a class="links" href="">About Us</a>
+
+            <a class="links" href="">Our Partners</a>
+
+            <a class="links" href="https://172.16.0.144/JACCESS_BOT/portal/_savingaccount.php?reset=1">Apply Now</a>
+
+            <a class="links" href="">FAQ</a>
+
+            <a class="links" href="">Contact Us</a>
+          </div>
+
+          <div class="col-sm-3 column_footer">
+            <h2>Supported by Bank Negara Malaysia</h2>
+            <img src="files_related/logo_bnm.png" onclick="window.location.href='https://www.bnm.gov.my/';">
+          </div>
         </div>
       </div>
     </footer>
@@ -346,9 +391,33 @@
     function submitForm(){
       var amount = parseInt(output_amount_calc);
       var years = parseInt(output1.innerHTML);
-      window.location.href='http://172.16.0.144/JACCESS_BOT/portal/_onlineaggregator.php?reset=1&tenure='+years+'&amt='+amount;
+      window.location.href='https://172.16.0.144/JACCESS_BOT/portal/_onlineaggregator.php?reset=1&tenure='+years+'&amt='+amount;
     }
 
+  </script>
+
+  <script>
+
+    // slideshow script
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
   </script>
 
 </body>

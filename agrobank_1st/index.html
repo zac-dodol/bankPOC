@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agrobank</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel='shortcut icon' type='image/x-icon' href='files_related/favicon.ico' />
+  <link rel="stylesheet" href="/agrobank/files_related/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body onload="myCalcOri()">
+
+  <div class="header">
+    <div class="container">
+      <img class="logo" src="files_related/logo.png" onclick="window.location.href='https://www.agrobank.com.my/';">
+      <div class="header-right">
+        <!-- <a class="active" href="#home">About Us</a> -->
+        <a href="#home">About Us</a>
+        <a href="#contact">FAQ</a>
+        <a href="#about">Our Partners</a>
+        <a href="https://172.16.0.144/JACCESS_BOT/portal/_savingaccount.php?reset=1">Open An Account</a>
+        <a href="#about">EN</a>
+        <a href="#about">BM</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="main_body">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+
+          <div class="question"><div class="text-center">I want to borrow RM <span id="val-loan-amt" class="values"></span></div></div>
+
+          <div class="slidecontainer">
+            <input type="range" min="1000" max="5000000" value="1000" class="slider" id="loan-amt" onchange="myCalc()">
+          </div>
+
+          <div class="question"><div class="text-center">For <span id="val-loan-tenure" class="values"></span> Year(s)</div></div>
+
+          <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="0" class="slider" id="loan-tenure" onchange="myCalc()">
+          </div>
+
+          <div class="question" style="font-style: italic;">
+            <div class="text-center">Estimated Monthly Installment</span></div>
+          </div>
+
+          <div class="installment_amt values" style="border-bottom: none;">
+            <div class="text-center">RM <span id="val-loan-monthly"></div>
+            </div>
+
+            <div class="text-center">
+              <button class="button buttonR" onclick="submitForm()">Apply Now</button>
+            </div>
+
+            <div class="çol-md-12 star">
+              <div class="text-center">
+                <span style="color:#ed1b24;">*</span>
+                Based on the interest rate of 
+                <span id="emiRate">11.7</span>% per annum.
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-sm-6">
+            <div class="text-center"><h2 class=""><span id="lay_icon_title" class="lay_icon_title">10</span><span class="lay_icon_title_words"> matched product(s)</span></h2></div>
+            <div class="matched-products">
+              <div id="icon7" class="column bubble">
+                <img alt="Micro Credit" src="files_related/icon/Demo_1_Micro-credit.png">
+                <label>Micro Credit</label>
+              </div>
+              <div id="icon8" class="column bubble">
+                <img src="files_related/icon/Demo_2_Term-financing.png">
+                <label>Term Financing</label>
+              </div>
+              <div id="icon4" class="column bubble">
+                <img src="files_related/icon/Demo_4_i-financing.png">
+                <label>I-Financing</label>
+              </div>
+              <div id="icon5" class="column bubble">
+                <img src="files_related/icon/Demo_5_Cash-line.png">
+                <label>Cash Line</label>
+              </div>
+              <div id="icon6" class="column bubble">
+                <img src="files_related/icon/Demo_6_Strategic-i-fin.png">
+                <label>Strategic-I-Fin</label>
+              </div>
+              <div id="icon1" class="column bubble">
+                <img src="files_related/icon/Demo_7_Biz-money.png">
+                <label>Biz Money</label>
+              </div>
+              <div id="icon2" class="column bubble">
+                <img src="files_related/icon/Demo_8_Biz_cash.png">
+                <label>Biz Cash</label>
+              </div>
+              <div id="icon3" class="column bubble">
+                <img src="files_related/icon/Demo_9_Biz-quick.png">
+                <label>Biz Quick</label>
+              </div>
+              <div id="icon9" class="column bubble">
+                <img src="files_related/icon/Demo_3_Loyalty-financing.png">
+                <label>SME Loan</label>
+              </div>
+              <div id="icon10" class="column bubble">
+                <img src="files_related/icon/Demo_10_Argricultural-financing.png">
+                <label>I-Microplus</label>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="second_body" style="margin-bottom: 0px; padding-top: 0px;">
+    <div class="container">
+
+      <div class="row"  style="margin: 0px;align-items: stretch;padding: 45px 0 60px;">
+        <div class="col-sm-6">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rm7wXXNWnsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-sm-6" style="padding: 0 30px">
+
+          <div class="column-title">
+            <h4 class="column-title-text">Looking to apply for a personal loan?</h4>
+          </div>
+
+          <div class="row" style="margin-top: 0px; padding-top: 0px;">
+            <div class="column" style="padding: 0 30px 0 0;">
+              <h6 style="margin-top: 0px; margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #ffc80b; font-size: 22px;">1</span> Give us some info</h6>
+              <p style=""><span style="color: #000000; font-size: 14px;">Play with our calculator and find matching products that meet your needs.</span></p>
+            </div>
+
+            <div class="column" style="padding: 0 30px 0 0;">
+              <h6 style="margin-top: 0px; margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #ff9804; font-size: 22px;">2</span> Tell us your story</h6>
+              <p style=""><span style="color: #000000; font-size: 14px;">Give us some info about you so that we can help you find the best matches.</span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column" style="padding: 0 30px 0 0;">
+              <h6 style=" margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #f37019; font-size: 22px;">3</span> Just register</h6>
+              <p style=""><span style="color: #000000; font-size: 14px;">Give us your contact details and answer some simple questions for verification purposes.</span></p>
+            </div>
+
+            <div class="column" style="padding: 0 30px 0 0;">
+              <h6 style=" margin-bottom: 15px; font-size: 18px; color: #001669; ">Step <span style="color: #00c433; font-size: 22px;">4</span> Compare and choose</h6>
+              <p style=""><span style="color: #000000; font-size: 14px;">Choose the best products and funds will be deposited into your account within minutes!</span></p>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="button buttonR" onclick="window.location.href='http://172.16.0.144/JACCESS_BOT/portal/_personalloan1.php?reset=1';">Apply Now</button>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+      <div class="row row_footer" style="padding-top: 0px;">
+
+        <div class="col-sm-3 column_footer">
+          <img class="logo" src="files_related/logo.png" onclick="window.location.href='https://www.agrobank.com.my/';">
+          <p>For any enquiries regarding Agrobank, please contact our Client Service Centre.</p>
+          
+          <p>Bank Pertanian Malaysia Berhad</p>
+          <p>(811810-U)</p>
+          <p><a class="links" href="https://www.agrobank.com.my" target="_blank">https://www.agrobank.com.my</a></p>
+          
+          <p>Terms of Use | Privacy & Security Policies</p>
+        </div>
+
+        <div class="col-sm-3 column_footer">
+          <h2>Contact Us</h2>
+          <p>Head Office / Registered Office:</p>
+          <p>Bank Pertanian Malaysia Berhad (Agrobank)</p>
+          <p>Leboh Pasar Besar,</p>
+          <p>50726, Kuala Lumpur</p>
+          
+          <p>Tel: 03-2731 1600</p>
+          <p>Fax: 03-2691 4908</p>
+          <p>Agro Contact Centre: 1-300-88-2476</p>
+        </div>
+
+        <div class="col-sm-3 column_footer">
+          <h2>Main Link</h2>
+          <a class="links" href="">About Us</a>
+                
+          <a class="links" href="">Our Partners</a>
+                
+          <a class="links" href="https://172.16.0.144/JACCESS_BOT/portal/_savingaccount.php?reset=1">Apply Now</a>
+                
+          <a class="links" href="">FAQ</a>
+                
+          <a class="links" href="">Contact Us</a>
+        </div>
+
+        <div class="col-sm-3 column_footer">
+          <h2>Supported by Bank Negara Malaysia</h2>
+          <img src="files_related/logo_bnm.png" onclick="window.location.href='https://www.bnm.gov.my/';">
+        </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    // loan amount
+    var slider = document.getElementById("loan-amt");
+    var output = document.getElementById("val-loan-amt");
+    output.innerHTML = slider.value;
+    var output_amount_ori = slider.value;
+    output.innerHTML = thousands_separators(output.innerHTML);
+    var output_amount_calc = 1000;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+      output.innerHTML = thousands_separators(output.innerHTML);
+      output_amount_calc = this.value;
+
+    }
+
+    // loan tenure
+    var slider1 = document.getElementById("loan-tenure");
+    var output1 = document.getElementById("val-loan-tenure");
+    output1.innerHTML = slider1.value;
+
+    slider1.oninput = function() {
+      output1.innerHTML = this.value;
+    }
+
+    // loan Monthly
+    function thousands_separators(num)
+    {
+      var num_parts = num.toString().split(".");
+      num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return num_parts.join(".");
+    }
+
+    function myCalcOri() {
+      var amount = parseInt(output_amount_ori);
+      var years = parseInt(output1.innerHTML);
+      let total_monthly = amount / (years*12);
+      total_monthly = total_monthly.toFixed(2);
+      document.getElementById("val-loan-monthly").innerHTML = total_monthly;
+    }
+
+    function myCalc() {
+      var amount = parseInt(output_amount_calc);
+      var years = parseInt(output1.innerHTML);
+      let total_monthly = amount / (years*12);
+      total_monthly = total_monthly.toFixed(2);
+      total_monthly = thousands_separators(total_monthly);
+      document.getElementById("val-loan-monthly").innerHTML = total_monthly;
+
+      var element = document.getElementById("lay_icon_title");
+      var element1 = document.getElementById("icon1");
+      var element2 = document.getElementById("icon2");
+      var element3 = document.getElementById("icon3");
+      var element4 = document.getElementById("icon4");
+      var element5 = document.getElementById("icon5");
+      var element6 = document.getElementById("icon6");
+      var element7 = document.getElementById("icon7");
+      var element8 = document.getElementById("icon8");
+      var element9 = document.getElementById("icon9");
+      var element10 = document.getElementById("icon10");
+
+      if (amount > 4500000 || years >8) {
+        element4.classList.add("hide");
+        element5.classList.add("hide");
+        element6.classList.add("hide");
+        element7.classList.add("hide");
+        element8.classList.add("hide");
+        element9.classList.add("hide");
+        element10.classList.add("hide");
+        document.getElementById("lay_icon_title").innerHTML = "3";
+      } 
+      else if (amount > 4000000 || years >6) {
+        element6.classList.add("hide");
+        element7.classList.add("hide");
+        element8.classList.add("hide");
+        element9.classList.add("hide");
+        element10.classList.add("hide");
+        element4.classList.add("show");
+        element5.classList.add("show");
+        element4.classList.remove("hide");
+        element5.classList.remove("hide");
+        document.getElementById("lay_icon_title").innerHTML = "5";
+      }
+      else if (amount > 3000000 || years >4) {
+        element8.classList.add("hide");
+        element9.classList.add("hide");
+        element10.classList.add("hide");
+        element4.classList.add("show");
+        element5.classList.add("show");
+        element6.classList.add("show");
+        element7.classList.add("show");
+        element8.classList.add("show");
+        element4.classList.remove("hide");
+        element5.classList.remove("hide");
+        element6.classList.remove("hide");
+        element7.classList.remove("hide");
+        element8.classList.remove("hide");
+        document.getElementById("lay_icon_title").innerHTML = "8";
+      }
+      else if (amount > 2000000 || years >2) {
+        element10.classList.add("hide");
+        element4.classList.add("show");
+        element5.classList.add("show");
+        element6.classList.add("show");
+        element7.classList.add("show");
+        element8.classList.add("show");
+        element9.classList.add("show");
+        element4.classList.remove("hide");
+        element5.classList.remove("hide");
+        element6.classList.remove("hide");
+        element7.classList.remove("hide");
+        element8.classList.remove("hide");
+        element9.classList.remove("hide");
+        document.getElementById("lay_icon_title").innerHTML = "9";
+      }
+      else {
+        element4.classList.remove("hide");
+        element5.classList.remove("hide");
+        element6.classList.remove("hide");
+        element7.classList.remove("hide");
+        element8.classList.remove("hide");
+        element9.classList.remove("hide");
+        element10.classList.remove("hide");
+        element4.classList.add("show");
+        element5.classList.add("show");
+        element6.classList.add("show");
+        element7.classList.add("show");
+        element8.classList.add("show");
+        element9.classList.add("show");
+        element10.classList.add("show");
+        document.getElementById("lay_icon_title").innerHTML = "10";
+      }
+    }
+
+    function submitForm(){
+      var amount = parseInt(output_amount_calc);
+      var years = parseInt(output1.innerHTML);
+      window.location.href='http://172.16.0.144/JACCESS_BOT/portal/_onlineaggregator.php?reset=1&tenure='+years+'&amt='+amount;
+    }
+
+  </script>
+
+</body>
+</html>
